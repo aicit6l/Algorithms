@@ -7,9 +7,9 @@ def fibonacci(fibLimit):
         sum = fibList[-1] + fibList[-2] # accesses the last two computed values and sums them
         fibList.append(sum)
         
-    strFib = ", ".join(map(str, fibList)) # converts each element into a string
+    result = ", ".join(map(str, fibList)) # converts each element into a string
 
-    print(strFib)
+    print(result)
 
 
 fibonacci(int(input("Enter the fibonacci limit : ")))
