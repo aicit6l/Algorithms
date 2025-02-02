@@ -4,13 +4,11 @@ def fibonacci(fibLimit):
 
     while count < fibLimit:
         count += 1
-        for i in range(len(fibList)):
-            sum = fibList[i] + fibList[i-1]
+        sum = fibList[-1] + fibList[-2] # accesses the last two computed values and sums them
         fibList.append(sum)
         
     strFib = ", ".join(map(str, fibList)) # converts each element into a string
 
-    print(fibList)
     print(strFib)
 
 
